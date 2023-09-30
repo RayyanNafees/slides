@@ -10,11 +10,7 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/vercel": "^5.0.1",
-    "@trpc/client": "^10.38.5",
-    "@trpc/server": "^10.38.5",
-    "astro": "^3.2.0",
-    "zod": "^3.22.2"
+    "astro": "^3.2.0"
   },
   "devDependencies": {
     "unocss": "^0.56.4"
