@@ -1,9 +1,5 @@
 ---
-//@ts-nocheck
-import { GET } from './greet.ts'
-
-let response = await GET(Astro)
-const data = await response.json()
+const data = await fetch(Astro.url.origin+'/greet').then(r=>r.text())
 ---
 
 <html lang='en'>
@@ -15,6 +11,6 @@ const data = await response.json()
     <title>Astro</title>
   </head>
   <body>
-    <h1>Greeting from Astro: {data.greeting}</h1>
+    <h1>Greeting from Astro: {data}</h1>
   </body>
 </html>

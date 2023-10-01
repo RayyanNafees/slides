@@ -12,4 +12,4 @@ app.use((req, res, next) => {
 })
 
 app.get('/home', (req, res) => res.send('Rayyno Nafeeso'))
-app.listen(8080)
+app.listen(8080, ()=> console.log('Listening on http://localhost:8080'))
