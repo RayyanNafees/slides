@@ -1,5 +1,9 @@
 ---
-const greeting = 'Rayyan'
+//@ts-nocheck
+import { GET } from './greet.ts'
+
+let response = await GET(Astro)
+const data = await response.json()
 ---
 
 <html lang='en'>
@@ -11,6 +15,6 @@ const greeting = 'Rayyan'
     <title>Astro</title>
   </head>
   <body>
-    <h1>Greeting from Astro: {greeting}</h1>
+    <h1>Greeting from Astro: {data.greeting}</h1>
   </body>
 </html>
