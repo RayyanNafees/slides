@@ -10,9 +10,15 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^3.2.0"
+    "@astrojs/node": "^6.0.1",
+    "@fastify/middie": "^8.3.0",
+    "@fastify/static": "^6.11.2",
+    "astro": "^3.2.0",
+    "fastify": "^4.23.2"
   },
   "devDependencies": {
+    "@types/node": "^20.8.0",
+    "typescript": "^5.2.2",
     "unocss": "^0.56.4"
   }
 }

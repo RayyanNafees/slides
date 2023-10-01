@@ -1,5 +1,5 @@
 ---
-const greeting = 'Rayyan'
+const greeting = fetch('/greet').then(r=>r.text())
 ---
 
 <html lang='en'>
