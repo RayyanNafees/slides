@@ -1,3 +1,3 @@
 import type { APIRoute } from 'astro'
 
-export const GET: APIRoute = () => new Response('Rayyan')
+export const all: APIRoute = () => new Response('Rayyan')
